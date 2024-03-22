@@ -40,6 +40,6 @@ kubectl port-forward service/fastapi-service 8000:80
 curl -X POST http://localhost:8000/set/mykey -H "Content-Type: application/json" -d '{"value": "myvalue"}'
 
 # Get the value from the store
-curl -X GET http://localhost:8000/get/myKey
+curl  http://localhost:8000/get/myKey
 
 ```
